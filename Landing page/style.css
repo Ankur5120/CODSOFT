@@ -1,0 +1,97 @@
+body{
+    width:100% ;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('pexels-pixabay-38238.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+}
+nav{
+    width:100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 3em;
+    letter-spacing: 2px;
+    font-style: oblique;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+.menu a::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0%;
+    height: 100%;
+    border-bottom: 2px solid rgb(11, 149, 39);
+    transition: 0.4s linear;
+}
+.menu a:hover::before{
+    width: 90%;
+}
+.register a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: rgb(192, 58, 58);
+    border-radius: 8px;
+    transition: 0.4s;
+}
+.register a:hover{
+    background: transparent;
+    border: 1px solid rgb(219, 44, 44);
+}
+.mid-text{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: aliceblue;
+}
+.span-text{
+    font-size: 60px;
+    font-family:fantasy ;
+    letter-spacing: 3px;
+    
+}
+.mid-text a{
+    text-decoration:none ;
+    background: rgb(200, 64, 64);
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+.mid-text a:hover{
+    background: transparent;
+    border: 1px solid rgb(217, 48, 48);
+}
+.media-icons{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+.media-icons a{
+    position: relative;
+    color: #b62222;
+    font-size: 25px;
+    transition: 0.3s;
+    transition-property: transform;
+  }
+  
+  .media-icons a:not(:last-child){
+    margin-right: 60px;
+  }
